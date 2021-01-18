@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  sdbpostgres:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: "pg123"
+    ports:
+      - "5432:5432"
+    volumes:
+      - /postgresdb:/var/lib/postgresql/data
+    networks:
+      - postgres-compose-network
+networks:
+  postgres-compose-network:
+    driver: bridge

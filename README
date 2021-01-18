@@ -1,0 +1,4 @@
+# API REST com Spring Boot
+
+## inicializar o container do banco de dados postgresql
+execute o docker-compose no terminal `docker-compose up -d`
